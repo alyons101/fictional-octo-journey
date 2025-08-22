@@ -1,38 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shabbat Times</title>
-    <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="style.css"> <!-- If style.css is in the same folder -->
-    <!-- OR, if your CSS is in a folder like /css/ -->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <!-- Header Section -->
     <header>
         <div class="logo">
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_logo.png" alt="Shabbat Times Logo"></a> <!-- Replace with your logo -->
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_logo.png" alt="Shabbat Times Logo"></a>
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Misconceptions About Judaism</a></li>
-                <li><a href="#">Shabbat Times</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#misconceptions">Misconceptions</a></li>
+                <li><a href="#shabbat-times">Shabbat Times</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-content">
             <h1>Shabbat Times and Jewish Insights</h1>
-            <p>Explore Shabbat times worldwide, uncover the beauty of Judaism, and debunk common misconceptions.</p>
+            <p>Explore Shabbat times worldwide and discover the beauty of Judaism.</p>
             <div class="cta-buttons">
                 <a href="#shabbat-times" class="btn">Find Shabbat Times</a>
                 <a href="#learn-more" class="btn">Learn More about Judaism</a>
@@ -47,17 +42,17 @@
             <div class="tile">
                 <img src="https://placeimg.com/300/200/tech" alt="Judaism Image">
                 <h3>What is Judaism?</h3>
-                <p>Judaism is one of the oldest monotheistic religions, with a rich history and culture that dates back thousands of years.</p>
+                <p>Judaism is one of the oldest monotheistic religions with a rich history.</p>
             </div>
             <div class="tile">
                 <img src="https://placeimg.com/300/200/nature" alt="Misconceptions Image">
                 <h3>Debunking Myths</h3>
-                <p>Many myths surround Judaism. Let's correct common misunderstandings and learn the truth based on facts and research.</p>
+                <p>Let's correct common misunderstandings and learn the truth based on research.</p>
             </div>
             <div class="tile">
                 <img src="https://placeimg.com/300/200/animals" alt="Shabbat Image">
                 <h3>The Importance of Shabbat</h3>
-                <p>Shabbat is the Jewish day of rest. It starts at sunset on Friday and ends at nightfall on Saturday, offering a time to connect spiritually and with family.</p>
+                <p>Shabbat is a time to connect spiritually and with family.</p>
             </div>
         </div>
     </section>
@@ -66,30 +61,7 @@
     <section class="shabbat-times" id="shabbat-times">
         <h2>Shabbat Times for Major Cities</h2>
         <div class="cities-grid" id="shabbat-times-grid">
-            <div class="city" id="london">
-                <h4>London</h4>
-                <p>Shabbat In: 7:00 PM | Shabbat Out: 8:00 PM</p>
-            </div>
-            <div class="city" id="new-york">
-                <h4>New York</h4>
-                <p>Shabbat In: 6:00 PM | Shabbat Out: 7:00 PM</p>
-            </div>
-            <div class="city" id="tel-aviv">
-                <h4>Tel Aviv</h4>
-                <p>Shabbat In: 7:30 PM | Shabbat Out: 8:30 PM</p>
-            </div>
-            <div class="city" id="miami">
-                <h4>Miami</h4>
-                <p>Shabbat In: 6:30 PM | Shabbat Out: 7:30 PM</p>
-            </div>
-            <div class="city" id="paris">
-                <h4>Paris</h4>
-                <p>Shabbat In: 8:00 PM | Shabbat Out: 9:00 PM</p>
-            </div>
-            <div class="city" id="sydney">
-                <h4>Sydney</h4>
-                <p>Shabbat In: 5:30 PM | Shabbat Out: 6:30 PM</p>
-            </div>
+            <!-- Dynamic Content will go here -->
         </div>
         <div class="search">
             <label for="city-select">Select your city:</label>
@@ -104,19 +76,8 @@
         </div>
     </section>
 
-    <!-- Jewish Teachings Section -->
-    <section class="teachings">
-        <h2>Shabbat Teachings and Jewish Culture</h2>
-        <div class="teachings-content">
-            <h3>Shabbat's Role in Jewish Life</h3>
-            <p>Shabbat is not just a day of rest, but a way to reset spiritually, connect with community, and deepen one’s relationship with God. Here, we explore the various customs, prayers, and rituals observed during Shabbat.</p>
-            <h3>The Importance of Family</h3>
-            <p>Family is at the center of Jewish life, and Shabbat is a time when families gather to share meals, talk, and celebrate together. This day provides an opportunity to strengthen bonds and reflect on the week’s blessings.</p>
-        </div>
-    </section>
-
     <!-- Footer Section -->
-    <footer>
+    <footer id="contact-us">
         <div class="footer-links">
             <ul>
                 <li><a href="#">Privacy Policy</a></li>
@@ -135,7 +96,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
 </body>
-
 </html>
