@@ -1,235 +1,142 @@
 /* General Styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #141414;
-  color: white;
-  margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
 }
 
-/* Header */
 header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #141414;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #141414;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
 header .logo img {
-  width: 120px;
+    width: 120px;
 }
 
 nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li a {
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-  text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 /* Hero Section */
 .hero {
-  background-image: url('images/shabbat-table.jpg'); /* Replace with your image */
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 150px 20px;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
+    background-image: url('images/shabbat-table.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
 .cta-buttons a {
-  background-color: #e50914;
-  color: white;
-  padding: 15px 30px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  margin: 10px;
-  display: inline-block;
+    background-color: #e50914;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
 }
 
 .cta-buttons a:hover {
-  background-color: #f40612;
-}
-
-/* Basics Section */
-.basics {
-  padding: 60px 20px;
-  background-color: #141414;
-}
-
-.basics h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2rem;
-}
-
-.tiles {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.tile {
-  background-color: #333;
-  padding: 20px;
-  width: 30%;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.tile img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.tile h3 {
-  margin-bottom: 10px;
-}
-
-.tile p {
-  font-size: 1rem;
-  color: #bbb;
+    background-color: #f40612;
 }
 
 /* Shabbat Times Section */
 .shabbat-times {
-  padding: 60px 20px;
-  background-color: #141414;
-}
-
-.shabbat-times h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2rem;
+    padding: 60px 20px;
+    background-color: #141414;
 }
 
 .cities-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
 }
 
 .city {
-  background-color: #333;
-  padding: 20px;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .city h4 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .city p {
-  font-size: 1rem;
-  color: #bbb;
-}
-
-/* Search Section */
-.search {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.search select {
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #333;
-}
-
-/* Jewish Teachings Section */
-.teachings {
-  padding: 60px 20px;
-  background-color: #141414;
-}
-
-.teachings h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2rem;
-}
-
-.teachings-content h3 {
-  margin-bottom: 10px;
-  font-size: 1.5rem;
-}
-
-.teachings-content p {
-  font-size: 1.1rem;
-  color: #bbb;
-  margin-bottom: 30px;
+    font-size: 1rem;
+    color: #bbb;
 }
 
 /* Footer */
 footer {
-  background-color: #141414;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
+    background-color: #141414;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 footer .footer-links ul {
-  list-style-type: none;
-  margin-bottom: 20px;
+    list-style-type: none;
+    margin-bottom: 20px;
 }
 
 footer .footer-links ul li {
-  display: inline;
-  margin-right: 20px;
+    display: inline;
+    margin-right: 20px;
 }
 
 footer .footer-links ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 footer .social-media a {
-  color: white;
-  margin-right: 20px;
-  font-weight: bold;
-  text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-weight: bold;
+    text-decoration: none;
 }
-
-footer .contact p {
-  margin-top: 20px;
-}
-
